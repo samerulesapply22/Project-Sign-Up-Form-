@@ -1,0 +1,98 @@
+* {
+    font-family: 'LiberationSansRegular'; 
+    background-image: url("background.jpeg");
+    
+}
+
+#mirek {
+    background-image: url("background.jpeg");
+    font-family: 'COUTUREBold';
+    letter-spacing: -.1em;
+    font-size: 36px;
+}
+
+
+form {
+    margin-top: 10em;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+input:invalid:focus {
+    border: 1px solid red;
+    background: white;
+}
+input:focus:valid {
+    border: 1px solid green;
+    background: white;
+}
+input {
+    border: 1px solid grey;
+    background: whitesmoke;
+}
+
+input:hover {
+    border: 1px solid #E5E7EB;
+    background: white;
+}
+
+fieldset {
+    display: flex;
+    gap: 4em;  
+    margin: 0px;
+    border: 1px solid grey;
+    background: whitesmoke;
+}
+legend {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: whitesmoke;
+}
+.column-one, 
+.column-two {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    padding: 20px;
+    padding-bottom: 0px;
+    background: whitesmoke;
+}
+div, label, span {
+    background: whitesmoke;
+}
+#newsletter {
+    margin-top: 15px;
+}
+#message{
+    font-size: 0.7em;
+}
+button {
+    margin-left: 5px;
+    margin-top: 20px;
+    background: whitesmoke;
+	border: 1px solid grey;
+    font-size: 1.1em;
+    padding: 10px 170px;
+}
+button:hover {
+    background: grey;
+    color: whitesmoke;
+}
+#already {
+    margin: 15px;
+    margin-left: 35px;
+    font-size: 0.74em;
+}
+
+
+
+
+
+
+
+
+
+

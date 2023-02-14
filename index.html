@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/liberation-sans" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/couture" type="text/css"/>
+</head>
+<body>
+    <div id="mirek"> MIREK </div>
+    <form action="#" method="get">
+        <fieldset>
+        <legend> Sign-up Form</legend>
+            <div class="column-one">
+                <label for="first-name"> First Name </label>
+                <input type="text" name="first-name" id="first-name" minlength="1" maxlength="20" required>
+
+                <label for="email"> Email </label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password"> Password </label>
+                <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
+                <span id="message"> </span>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter"> Sign up for our newsletter </label>
+                </div>
+            </div>
+
+            <div class="column-two"> 
+                <label for="last-name"> Last Name </label>
+                <input type="text" name="last-name" id="last-name" minlength="1" maxlength="20" required>
+                
+                <label for="phone-number"> Phone Number </label>
+                <input type="text" name="phone-number" id="phone-number" pattern="[0-9]{10}" required>
+            
+                <label for="confirm-password"> Confirm Password </label>
+                <input type="password" name="confirm-password" id="confirm-password" onkeyup="match();" required>
+            </div>
+        </fieldset>
+        <button type="submit"> Create Account </button>
+        <div id="already"> Already have an account? <span id="log-in"> <u> Log in </u> </span> </div>
+    </form>
+    <script src="javascript.js"> </script>
+</body>
+</html>
