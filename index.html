@@ -22,9 +22,12 @@
                 <input type="email" name="email" id="email" required>
 
                 <label for="password"> Password </label>
-                <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
+                <input type="password" name="password" id="password" minlength="8" maxlength="20" onkeyup="match();" required>
                 <span id="message"> </span>
-
+                <div>
+                    <input type="checkbox" class="show_password" name="show_password" onclick="showPassword();">
+                    <label for="show_password" class="show_password"> Show password </label>
+                </div>
                 <div>
                     <input type="checkbox" id="newsletter" name="newsletter">
                     <label for="newsletter"> Sign up for our newsletter </label>
@@ -42,7 +45,7 @@
                 <input type="password" name="confirm-password" id="confirm-password" onkeyup="match();" required>
             </div>
         </fieldset>
-        <button type="submit" disabled> Create Account </button>
+        <button type="submit" disabled                                 > Create Account </button>
         <div id="already"> Already have an account? <span id="log-in"> <u> Log in </u> </span> </div>
     </form>
     <script src="javascript.js"> </script>

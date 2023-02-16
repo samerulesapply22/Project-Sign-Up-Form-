@@ -14,3 +14,16 @@ function match() {
     }
 }
 
+function showPassword() {
+    password = document.querySelector("#password");
+    confirm_password = document.querySelector("#confirm-password");
+    console.log("fuck");
+    if (password.type === "password") {
+        password.type = "text";
+        confirm_password.type = "text";
+    } else {
+        password.type = "password";
+        confirm_password.type = "password";
+    }
+}
+
