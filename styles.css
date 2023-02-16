@@ -32,11 +32,6 @@ input {
     background: whitesmoke;
 }
 
-input:hover {
-    border: 1px solid #E5E7EB;
-    background: white;
-}
-
 fieldset {
     display: flex;
     gap: 4em;  
